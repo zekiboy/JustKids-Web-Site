@@ -1,0 +1,547 @@
+/*Header için CSS kodları*/
+.lang
+{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    padding-top: 5px;
+    margin-right: 10px;
+    align-items: center;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.lang a 
+{
+    display: flex;
+    align-items: center;
+    color: blue;
+    text-decoration: none;
+}
+.lang a:first-child
+{
+    border-right: 1px solid blue;
+}
+.lang img
+{
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 5px;
+}
+.logo
+{
+    width: 20%;
+    vertical-align: middle;
+    text-align: left;
+    align-items: center;
+} 
+.logo img 
+{
+    width: 100%;
+    vertical-align: middle;
+}
+.menu > div 
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0px;
+    margin-right: 0px;
+}
+.menu 
+{
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin-left: 5%;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.menu a
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.menu a:hover
+{
+    transform: scale(1.1);
+}
+.m1,.m2,.m3,.m4,.m5 
+{
+    width: 10%;
+    height: 50px;
+    border-radius: 10px ;
+    background-color: #660099;
+    padding-top: 10px;
+    box-shadow: 0 0px 5px #660099;
+} 
+.ic-menu 
+{
+    background-color: #660099;
+    display: none;
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 10px;
+    position: absolute;
+    z-index: 1;
+    width: 9.9%;
+    height: 75px;
+    border-radius: 20px ;
+    font-size: 10px;
+}
+#ic-menu a
+{
+    font-size: 18px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.m4:hover .ic-menu 
+{
+    display: block;
+    opacity: 0.8;
+    margin-top: 6px;
+}
+.m6
+{
+    width: 10%; 
+}
+.m6 input
+{
+    position: relative;
+    width: 120%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #660099;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 12px 20px 12px 40px;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; 
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.m6.expanded input
+{
+    width:180%;
+}
+.m1 a, .m2 a, .m3 a, .m4 a, .m5 a 
+{
+    font-size: 20px; /* veya istediğiniz büyüklükte bir değer */
+    transition: font-size 0.3s ease-in-out;
+}
+.m1:hover a, .m2:hover a, .m3:hover a, .m4:hover a, .m5:hover a 
+{
+    font-size: 25px; /* veya istediğiniz büyüklükte bir değer */
+}
+.search_box.expanded 
+{
+    width: 1%;
+}
+.search 
+{
+    display: flex;
+    align-items: center;
+}
+.search_box
+{
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;  
+}
+
+
+  
+.takvim
+{
+    width: 25%;
+    height: 1200px;
+    background-color:#e0b0ff;
+    float: right;
+    /* margin-right: 4px; */
+    margin-top: -50px;
+    padding-bottom: 50px;
+    /* display: flex; */
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    min-height: 100vh;
+    margin-top: 5%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  /* margin-bottom: -3px; */
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+  /* rgba(0,0,0,0.12) */
+  /* position: relative; */
+  float: right;
+  /* margin-left:1100px ; */
+  position:fixed;
+  /* display:flexbox; */
+  background: #FFCBDB;
+
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+position: relative;
+}
+.calendar .days
+{
+  position:relative; 
+
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #F28DB2;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+body
+{
+    background-color:#e0b0ff;
+    overflow-x: hidden;
+    padding-left: 10px;
+}
+
+.egitim_baslik
+{
+    width: 68%;
+    margin-left:5%;
+    margin-right: 5%;
+}
+
+.egitim_baslik h2
+{
+    margin-top: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size:30px;
+    text-align: center;
+    margin-bottom:30px;
+    font-family:"Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+    background-color: #660099;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    /* text-shadow:  0 0 3px white; */
+}
+
+.egitim_ic
+{
+    width: 30%;
+    text-align: center;
+    margin: 2.5%;
+} 
+
+.egitim_ic b
+{
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    background-color: #660099;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    /* text-shadow:  0 0 3px white; */
+}
+
+.egitim_ic p
+{
+    font-family:"Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+    background-color: #660099;
+    border-radius: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    box-shadow: 0 0 5px black;
+    /* text-shadow:  0 0 1.5px white; */
+    margin-top: 25px;
+}
+
+.egitim_ic a
+{
+    font-weight:bolder;
+    font-size: 15px;
+    color:white;
+}
+
+#satranc, #drama,#ucdtasarim
+{   
+    float: left;
+    margin-left: 5%;
+
+}
+
+#robotik,#matematik,#resim
+{
+    float: right;
+    margin-right: 5%;
+
+}
+
+
+.egitim_ic img
+{
+    width: 70%;
+    height: 70%;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px black;
+}
+
+.egitim_ic img:hover
+{
+
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg) ;
+  transition-property: all;
+  transition-duration: 2s;  /*toplam yapıalcak süre*/
+  transition-timing-function: ease-in-out;
+  transition-delay:.1s; /*imleç üstüne geldikten  sonra 3 saniye sonra başla */
+  /* transform kondoları transition kodlarına bağlı çalışır*/ 
+}
+
+.egitim_ic:hover
+{
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+
+  transition-property: all;
+  transition-duration: 2s;  /*toplam yapıalcak süre*/
+  transition-timing-function: ease-in-out;
+  transition-delay:.1s; /*imleç üstüne geldikten  sonra 3 saniye sonra başla */
+  /* transform kondoları transition kodlarına bağlı çalışır*/ 
+}
+/*Footer İçin CSS Kodları*/
+footer
+{
+    width: 100%;
+    margin-top: 80px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+footer a
+{
+	text-decoration: none;
+	color: white;
+  font-family:"Comic Sans MS", cursive, sans-serif;     
+}
+footer a:hover
+{
+	text-decoration: none;
+	color: white;
+}
+#partend
+{
+    width: 100%;
+    height: 30%;
+    float: left;
+    display: flex;
+    color: white;
+    background-color:#660099;
+    font-style: initial;
+    border-radius: 10px; 
+    padding-bottom: 15px;   
+}
+.partendlisteleme1
+{
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+.partendlisteleme1 h2
+{
+  margin-bottom: 20px;
+}
+.partendlisteleme1 li
+{
+    margin-top: 2%;
+    cursor: pointer;
+    text-align:center;
+    padding-left: 0;
+}
+.partendlisteleme1 li:hover
+{
+    font-weight: bold;
+}
+.partendlisteleme2
+{
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.partendeğitimler
+{
+    margin-left: 5%;
+    width: 30%;
+}
+.partendeğitimler h2
+{
+    font-size: x-large;
+    padding-left: 70px;
+}
+.partendpersonel
+{
+    margin-left: 4%;
+    width: 15%;
+}
+.partendpersonel li
+{
+    margin-right: 10%;
+}
+.partendpersonel h2
+{
+    font-size: x-large;
+    margin-left: 5%;
+}
+.partendkurumsal
+{
+    margin-left: 5%;
+    width: 15%;
+}
+.partendkurumsal h2
+{
+    font-size: x-large;
+}
+.partendsosyalmedya
+{
+    margin-left: 5%;
+    width: 30%;
+}
+.partendsosyalmedya li
+{
+    margin-right: 40%;
+}
+.partendsosyalmedya h2
+{
+    font-size: x-large;
+}
+.partenddiksosyalmedya
+{
+    width: 48%;
+}
+.partenddiksosyalmedya h2
+{
+    font-size: large;
+    width: 100%;
+    padding-bottom: 30px;
+}
+.partendyansosyalmedya
+{
+    margin-left: 5%;
+    width: 10%;
+}
+.partendyansosyalmedya img
+{
+    width: 35%;
+    height: 35%;
+    margin-top: 18%;
+}
+.partendyansosyalmedya img:hover
+{
+    transform: scale(1.7);
+}
+.partenddiksosyalmedya img
+{
+    width: 10%;
+    height: 10%;
+    text-align: justify;
+    margin-right: 10%;
+    position: relative;
+    float: left;
+}
+.partendenalt 
+{
+    color: #4703A6;
+}

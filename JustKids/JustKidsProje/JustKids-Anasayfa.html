@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link href="JustKids-Anasayfa.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="JustKids-Anasayfa.js"></script>
+    </head>
+    <header>
+        <div id="lang" class="lang">
+            <a href=""><img src="images/turkey.png"> TR &nbsp;&nbsp;</a>
+            <a href="">&nbsp;&nbsp;<img src="images/eng.png"> EN &nbsp;&nbsp;</a>
+        </div>
+        <div id="menu" class="menu">
+            <div id="m1" class="m1">
+                <a href="JustKids-Anasayfa.html">Anasayfa</a>
+            </div>
+            <div id="m2" class="m2">
+                <a href="JustKids-Hakkımda.html">Biz Kimiz?</a>
+            </div>
+            <div id="m3" class="m3">
+                <a href="JustKids-Egitimler.html">Eğitimler</a>
+            </div>
+            <div id="logo" class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div id="m4" class="m4">
+                <a href="J">Personel</a>
+                <div id="ic-menu">
+                <ul class="ic-menu">
+                    <li><a href="JustKids-IdariPersonel.html">İdari</a></li><hr>
+                    <li><a href="JustKids-EgiticiPersonel.html">Öğretmen</a></li>
+                </ul></div>
+            </div>
+            <div id="m5" class="m5">
+                <a href="JustKids-IletişimSayfası.html">İletişim</a>
+            </div>
+            <div id="m6" class="m6">
+                <div class="search">
+                    <div class="search_box">
+                        <input type="text" id="input" class="input" onclick="inInput()" onblur="outInput()" placeholder="Ara..." <img src=""  /> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body>
+        <br><br>
+        <div class="slider" >
+            <div class="slider_item active"><img src="images/slider1.jpg"></div>
+            <div class="slider_item"><img src="images/slider2.jpg"></div>
+            <div class="slider_item"><img src="images/slider3.jpeg"></div>
+            <div class="slider_item"><img src="images/slider5.jpg"></div>
+            <div class="slider_item"><img src="images/slider9.jpg"></div>
+            <div class="slider_item"><img src="images/slider11.jpg"></div>
+            <div class="slider_item"><img src="images/slider15.jpeg"></div>
+            <div class="slider_item"><img src="images/slider16.jpeg"></div>
+
+            <div  id="prev" class="slider_btn"><img src="images/buttonImage2.svg"/></div>
+            <div  id="next" class="slider_btn"><img src="images/buttonImage.svg"/></div>
+        </div>
+
+
+        <div class="egitimm">
+            <table  class="egitimler" >
+                <tr>
+                    <td colspan="3">
+                        <div id="egitim_liste">
+                            <b>JustKids Eğitimler ve Atölyeler</b><br/><br/>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td  border="2">
+                        <div id="egitim_1">
+                            <a href="#"> <img src="images/post_20221230033555_satranc.jpg"/> </a>
+                            <a href="#"><h3 id="kurs1" class="kurs_adi" >Çocuklar için Satranç Kursu</h3><br/> </a>
+                            <h4 class="slogan">Satranç ile En Doğru Hamleni Yap!</h4>
+                            <h5 class="icerik"> Çocuklarda motivasyonu yükselten, davranışların düzelmesine yardımcı olan, özgüveni ve katılımcılığı artıran; her yaşa hitap eden bir spordur.</h5>
+                        </div>
+                    </td>
+                    <td  border="2">
+                        <div id="egitim_2">
+                            <a href="#"><img src="images/post_20221215124933_robotic-02.jpg" /></a>
+                            <a href="#"><h3 id="kurs2" class="kurs_adi">Çocuklar için Robatik Kodlama</h3></a><br/>
+                            <h4 class="slogan">Çocuklar için Robotik Kursu İcat Et!</h4> 
+                            <h5 class="icerik"> Yaratıcı düşünce, problem çözebilme becerisi,teknik beceriler, planlama becerisi, pes etmemek, takım çalışması,analitik düşünme becerilerini geliştirir.</h5>
+                        </div>
+                    </td>
+                    <td  border="2">
+                        <div id="egitim_3">
+                            <a href="#"><img src="images/Boytheatrecurtain_1400-1.jpg" />
+                            <a href="#"><h3 id="kurs3" class="kurs_adi">Çocuklar için Yaratıcı Drama</h3><br/>
+                            <h4 class="slogan">Sahne Senin!</h4>
+                            <h5 class="icerik"> Yaratıcı drama çocuğun kendisini etkili bir biçimde ifade edebilmesini sağlayan,empati kurma becerisini ortaya çıkartan, güven duygusunu pekiştiren bir paylaşım sürecidir.</h5>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td  border="2">
+                        <div id="egitim_4">
+                            <a href="#"> <img src="images/matematik.jpg" /></a>
+                            <a href="#"><h3 id="kurs1" class="kurs_adi">Çocuklar İçin Matematik Kursu</h3></a><br/>
+                            <h4 class="slogan">Matematik Çok Kolay!</h4>
+                            <h5 class="icerik"> Beyni güçlendirir ve hızlandırır, bilişsel yetenekler arttırır ve kişiye farklı bakış açıları kazandırır.</h5> 
+                        </div>
+                    </td>
+                    <td  border="2">
+                        <div id="egitim_5">
+                            <a href="#"><img src="images/ucdtasarim.png" /></a>
+                            <a href="#"><h3 id="kurs2" class="kurs_adi"> Çocuklar İçin 3D Tasarım Eğitimi</h3></a><br/>
+                            <h4 class="slogan">Sanatsal Ruh ve Yeteneğini Geliştir!</h4>
+                            <h5 class="icerik"> Tasarım eğitimi alan çocuklar öğrenme, yaratıcılık,eleştirel düşünme ve problem çözme becerilerini güçlendirir.</h5>  
+                        </div>
+                    </td>
+                    <td  border="2">
+                        <div id="egitim_6">
+                            <a href="#"><img src="images/resim.jpeg" /></a>
+                            <a href="#"><h3 id="kurs3" class="kurs_adi">Çocuklar İçin Resim Atöylesi</h3></a><br/>
+                            <h4 >Kendini Serbest Bırak!</h4>
+                            <h5 class="icerik">Nesneleri sanata dönüştürdükleri,malzemeler ile benzersiz sanat eserleri ürettikleri programdır.</h5>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <br><br>
+            <b id="var" >Tüm Eğitimleri Görmek İçin <span><a href="JustKids-Egitimler.html">Tıklayınız.</a></span></b>    
+            <br><br><br>
+     <div class="iletişim_formu">
+        <form id="contact" class="contact">
+            <h2>Bize Ulaşın</h2>
+            <div class="form-control">
+                <input placeholder="Adınız Soyadınız" type="text">
+            </div>
+            <div class="form-control">
+                <input placeholder="E-Posta Adresiniz" type="email">
+            </div>
+            <div class="form-control">
+                <input placeholder="Konu" type="text">
+            </div>
+            <div class="form-control">
+                <textarea placeholder="Lütfen Mesajınızı Buraya Yazın.."></textarea>
+            </div>
+            <div class="form-control">
+                <button name="submit" type="submit" id="submit">GÖNDER</button>
+            </div>
+        </form>
+    
+    </div>
+    </body>
+    <footer>
+        <div id="partend">
+            <div class="partendeğitimler">
+                <ul class="partendlisteleme1"><h2><a href="JustKids-Egitimler.html">Eğitimler</a></h2>
+                    <li><a href="JustKids-Satranc.html">Satranç</a></li>
+                    <li><a href="JustKids-Robotik.html">Robotik Kodlama</a></li>
+                    <li><a href="JustKids-Drama.html">Yaratıcı Drama</a></li>
+                    <li><a href="JustKids-Matematik.html">Matematik</a></li>
+                    <li><a href="JustKids-Tasarim.html">3D Tasarım Eğitimi</a></li>
+                    <li><a href="JustKids-Resim.html">Resim Atölyesi</a></li>
+                </ul>
+            </div>
+            <div class="partendpersonel">
+                <ul class="partendlisteleme1"><h2><a href="#">Personel</a></h2>
+                    <li><a href="JustKids-IdariPersonel.html">İdari Kadro</a></li>
+                    <li><a href="JustKids-EgiticiPersonel.html">Öğretmen Kadro</a></li>
+                </ul>
+            </div>
+            <div class="partendkurumsal">
+                <ul class="partendlisteleme1"><h2><a href="#">Kurumsal</a></h2>
+                    <li><a href="JustKids-Anasayfa.html">Anasayfa</a></li>
+                    <li><a href="JustKids-Hakkımda.html">Hakkımızda</a></li>
+                    <li><a href="JustKids-Egitimler.html">Eğitimler</a></li>
+                    <li><a href="#">Personel</a></li>
+                    <li><a href="JustKids-IletişimSayfası.html">İletişim</a></li>
+                </ul>
+            </div>
+            <div class="partendsosyalmedya">
+                <ul class="partendlisteleme1"><h2><a href="#">Sosyal Medya</a></h2>
+                    <li><a href="#">İnstagram</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Linkedin</a></li>
+                </ul>
+            </div>
+            <div class="partenddiksosyalmedya">
+                <ul class="partendlisteleme2">
+                    <li>
+                        <h2><img src="images/Headphone.png"/><a href="#">Çağrı Merkezi: 0850 320 50 50</a></h2>
+                    </li>
+                    <br/>
+                    <li>
+                        <h2><img src="images/whatsapp.png"/><a href="#">Whatsapp: 0850 320 50 50</a></h2>
+                    </li>
+                    <br/>
+                    <li>
+                        <h2><img src="images/Gmail_icon.png"/><a href="#">E-Posta: justkids@gmail.com</a></h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="partendyansosyalmedya">
+                <ul class="partendlisteleme2">
+                    <li><a href="#"><img src="images/linkedin.png"/></a></li>
+                    <li><a href="#"><img src="images/Instagram_icon.png"/></a></li>
+                    <li><a href="#"><img src="images/twitter.png"/></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="partendenalt">
+            <br/>
+            <address align="center">Tüm hakları saklıdır. ©2023<br/>www.justkids.com</address>
+        </div>           
+    </footer>
+</html>

@@ -1,0 +1,440 @@
+
+
+.lang
+{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    padding-top: 5px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.lang a 
+{
+    display: flex;
+    align-items: center;
+    color: blue;
+    text-decoration: none;
+}
+
+.lang a:first-child
+{
+    border-right: 1px solid blue;
+}
+
+.lang img
+{
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 5px;
+}
+
+.logo
+{
+    width: 20%;
+    vertical-align: middle;
+    text-align: left;
+    align-items: center;
+}
+  
+.logo img 
+{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.menu > div 
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0px;
+    margin-right: 0px;
+}
+
+.menu 
+{
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin-left: 5.5%;
+}
+
+.menu a
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.menu a:hover
+{
+    transform: scale(1.1);
+}
+
+.m1 
+{
+    width: 10%;
+    height: 50px;
+    border-radius: 20px ;
+    background-color: #C8A2C8;
+    padding-top: 10px;
+    
+}
+  
+.m2 
+{
+    width: 10%;
+    height: 50px;
+    border-radius: 20px ;
+    background-color: #30D5C8;
+    padding-top: 10px;
+    
+}
+ 
+.m3 
+{
+    width: 10%;
+    height: 50px;
+    border-radius: 20px ;
+    background-color: pink;
+    padding-top: 10px;
+}
+
+.m4 
+{
+    width: 10%;
+    height: 50px;
+    border-radius: 20px ;
+    background-color: #009688;
+    padding-top: 10px;
+    
+}
+
+.ic-menu 
+{
+    background-color: #009688;
+    display: none;
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 10px;
+    position: absolute;
+    z-index: 1;
+    width: 9.9%;
+    height: 100px;
+    border-radius: 20px ;
+}
+  
+.m4:hover .ic-menu 
+{
+    display: block;
+    opacity: 0.8;
+}
+  
+.m5 
+{
+    width: 10%;
+    height: 50px;
+    border-radius: 20px ;
+    background-color: #c8ad7f;
+    align-items:center;
+    padding-top: 10px;
+    
+}
+
+.m6
+{
+    width: 10%;
+}
+
+.m6 input
+{
+    position: relative;
+    width: 120%;
+    box-sizing: border-box;
+    border: 2px solid cornflowerblue;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 12px 20px 12px 40px;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; 
+}
+
+.m6.expanded input
+{
+    width:180%;
+}
+
+.m1 a, .m2 a, .m3 a, .m4 a, .m5 a 
+{
+    font-size: 1.8em; /* veya istediğiniz büyüklükte bir değer */
+    transition: font-size 0.3s ease-in-out;
+}
+
+.m1:hover a, .m2:hover a, .m3:hover a, .m4:hover a, .m5:hover a 
+{
+    font-size: 2em; /* veya istediğiniz büyüklükte bir değer */
+}
+
+.search_box.expanded 
+{
+    width: 1%;
+}
+
+.search 
+{
+    display: flex;
+    align-items: center;
+}
+  
+.search_box
+{
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;
+}
+
+.slider 
+{
+
+    position: relative;
+    width: 80%;
+    height: 600px;
+    margin-left: 10%;
+    
+    
+}
+
+.slide 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    
+}
+
+.slide img
+{
+    width: 100%;
+    height: 500px;
+    border-radius: 50px;
+    box-shadow: 0 10px 20px black;
+}
+
+.active 
+{
+    opacity: 1;
+}
+
+body
+{
+    background-color: white;
+    overflow-x: hidden;
+}
+
+.prev,.next
+{
+    width: 5%;
+    height:5%;
+    margin-top: 80px;
+    cursor: pointer;
+}
+
+.prev
+{
+    position: relative;
+    float: left;
+    opacity: 0.5;
+    margin-top: 240px;
+    margin-left: 0.2%;
+}
+
+.next
+{
+    position: relative;
+    float: right;
+    margin-right: -2.9%;
+    margin-top: 240px;
+    opacity: 0.5;
+
+}
+
+.prev:hover
+{
+    opacity:1;
+}
+
+.next:hover
+{
+    opacity:1;
+}
+
+.baslık
+{
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+    width: 100%;
+    margin-left: -1.4%;
+}
+
+.info
+{
+    width: 10%;
+    height: 50px;
+    border-radius: 20px ;
+    background-color: #007fff;
+    padding: 10px;
+}
+
+.baslık a
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    font-size: 1.8em; /* veya istediğiniz büyüklükte bir değer */
+    transition: font-size 0.3s ease-in-out;
+}
+
+.baslık a:hover
+{
+    font-size: 2em;
+}
+
+.hint p
+{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    padding-left: 24%;
+    font-size: 30px;
+    color: purple;
+    font-style: oblique;
+}
+
+.hint1
+{
+    text-align: center;
+}
+
+.hint1 img
+{
+    border-radius: 50px;
+}
+
+.hint2
+{
+    text-align: center;
+}
+
+.hint2 img
+{
+    border-radius: 50px;
+}
+
+
+#partend{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    color: white;
+    background-color: black;
+    font-style: initial;
+}
+
+.partendlisteleme1{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.partendlisteleme1 li{
+    margin-top: 2%;
+}
+
+.partendlisteleme1 li:hover{
+    font-weight: bold;
+}
+
+.partendlisteleme2{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.partendeğitimler{
+    margin-left: 5%;
+    width: 30%;
+}
+
+.partendeğitimler h2{
+    font-size: x-large;
+}
+
+.partendpersonel{
+    margin-left: 4%;
+    width: 15%;
+}
+
+.partendpersonel h2{
+    font-size: x-large;
+}
+
+.partendkurumsal{
+    margin-left: 5%;
+    width: 15%;
+}
+
+.partendkurumsal h2{
+    font-size: x-large;
+}
+
+.partendsosyalmedya{
+    margin-left: 5%;
+    width: 15%;
+}
+
+.partendsosyalmedya h2{
+    font-size: x-large;
+}
+
+.partenddiksosyalmedya{
+    margin-left: 5%;
+    width: 45%;
+}
+
+.partenddiksosyalmedya h2{
+    font-size: large;
+}
+
+.partendyansosyalmedya{
+    margin-left: 5%;
+    width: 10%;
+}
+
+.partendyansosyalmedya img{
+    width: 35%;
+    height: 35%;
+    margin-top: 18%;   
+}
+
+.partendyansosyalmedya img:hover{
+    transform: scale(1.7);
+}
+
+.partenddiksosyalmedya img{
+    width: 10%;
+    height: 10%;
+    text-align: justify;
+    margin-right: 10%;
+}

@@ -1,0 +1,192 @@
+
+body
+{
+    width: 90%;
+    margin-left:8%;
+    text-align: center;
+    background-image:url("images/background.jpg")
+   
+}
+.egitimler
+{
+    line-height:5px ;
+    width:90%;
+    height: 100%;
+    font-family: sans-serif;
+    text-align: center;
+  
+}
+.egitimler h4{
+    text-align: left;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    color: #f25c05;
+}
+#egitim_liste
+{
+    margin-top: 20px;
+    font-size:50px;
+    color: darkblue;
+    margin-bottom:10%;
+    background-color:#f25c05;
+    width:70%;
+    text-align: center;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    text-transform: capitalize;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    margin:auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 50px;
+    opacity: 0.8;
+}
+.kurs_adi
+{
+    font-size:20px;
+    color: #4703A6;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    text-align: left;
+    margin-bottom: -5px; 
+}
+
+
+.icerik
+{
+    font-size: 12px;
+    text-align: justify;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    line-height: 15px;
+    color: darkblue;
+}
+#egitim_1 img
+{
+    width:250px;
+    height: 250px;
+    border-radius: 25px;
+}
+#egitim_2 img
+{
+    width:250px;
+    height: 250px;
+    border-radius: 25px;
+}
+#egitim_3 img
+{
+    width:250px;
+    height: 250px;
+    border-radius: 25px;
+}
+#egitim_4 img
+{
+    width:250px;
+    height: 250px;
+    border-radius: 25px;
+}
+#egitim_5 img
+{
+    width:250px;
+    height: 250px;
+    border-radius: 25px;
+}
+#egitim_6 img
+{
+    width:250px;
+    height: 250px;
+    border-radius: 25px;
+}
+#egitim_1
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(158, 248, 248);
+    border-radius: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+#egitim_2
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fcdb7a;;
+    border-radius: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+#egitim_3
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:#cdb6ee;
+    border-radius: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 4%;
+}
+#egitim_4
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(247, 199, 159);
+    border-radius: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+#egitim_5
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(134, 255, 160);
+    border-radius: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#egitim_6
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(252, 143, 237);
+    border-radius: 30px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+span
+{
+       font-size: 25px;
+       font-family: cursive;
+       color:red;
+       animation: var 3s linear infinite;
+       text-align: center;
+       background-color: white;
+     } 
+     @keyframes var
+     {
+         0%{opacity: 0;} 50%{opacity: .5;} 100%{opacity: 1;}
+    }
+    span:hover{cursor: pointer;}
+#var{
+    animation: blinker 1s linear infinite;
+    background-color: white;
+    font-weight: bolder;
+    margin-right: 10%;
+}
+
+#k1,#k2 ,#k3 ,#k4 ,#k5 ,#k6 :hover{ cursor: pointer;}

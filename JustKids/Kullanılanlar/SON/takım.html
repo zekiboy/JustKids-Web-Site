@@ -1,0 +1,216 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+        <link href="takım.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="takım.js"></script>
+    </head>
+    <header>
+        <div id="lang" class="lang">
+            <a href=""><img src="images/turkey.png"> TR &nbsp;&nbsp;</a>
+            <a href="">&nbsp;&nbsp;<img src="images/eng.png"> EN &nbsp;&nbsp;</a>
+        </div>
+        <div id="menu" class="menu">
+            <div id="m1" class="m1">
+                <a href="takım.html">Anasayfa</a>
+            </div>
+            <div id="m2" class="m2">
+                <a href="hakkımda.html">Biz Kimiz?</a>
+            </div>
+            <div id="m3" class="m3">
+                <a href="">Eğitimler</a>
+            </div>
+            <div id="logo" class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div id="m4" class="m4">
+                <a href="">Personel</a>
+                <ul class="ic-menu">
+                    <li><a href="">İdari</a></li><hr>
+                    <li><a href="">Öğretmen</a></li>
+                  </ul>
+            </div>
+            <div id="m5" class="m5">
+                <a href="">İletişim</a>
+            </div>
+            <div id="m6" class="m6">
+                <div class="search">
+                    <div class="search_box">
+                        <input type="text" id="input" class="input" onclick="inInput()" onblur="outInput()" placeholder="Ara..." <img src=""  /> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body>
+        <br><br>
+        <div class="slider" >
+            <div id="img1" class="slide active"><img src="images/slider1.jpg"></div>
+            <div id="img2" class="slide"><img src="images/slider2.jpg"></div>
+            <div id="img3" class="slide"><img src="images/slider3.jpeg"></div>
+            <div id="img4" class="slide"><img src="images/slider4.jpeg"></div>
+            <div class="prev" id="b1"><img src="images/buttonImage2.svg"/></div>
+            <div class="next" id="b2"><img src="images/buttonImage.svg"/></div>
+        </div>
+
+
+        <div class="egitimm">
+        <table  class="egitimler" >
+            <tr>
+        <td colspan="3">
+            <div id="egitim_liste">
+               <b>JustKids Eğitimler ve Atölyeler</b><br/><br/>
+           </div>
+        </td>
+             </tr>
+        <tr>
+
+         <td  border="2">
+           <div id="egitim_1">
+             <img src="images/post_20221230033555_satranc.jpg" />
+             <h3 id="kurs1" class="kurs_adi">Çocuklar için Satranç Kursu</h3><br/>
+             <h4 class="slogan">Satranç ile En Doğru Hamleni Yap!</h4>
+                
+             <h5 class="icerik"> Çocuklarda motivasyonu yükselten, davranışların <br/>düzelmesine <h id="k1" onclick="kurs_1()" >...devamı</h><br/> <h id="k1_1"></h> </h5>
+        
+           </div>
+         </td>
+         <td  border="2">
+            <div id="egitim_2">
+              <img src="images/post_20221215124933_robotic-02.jpg" />
+              <h3 id="kurs2" class="kurs_adi">Çocuklar için Robatik Kodlama</h3><br/>
+              <h4 class="slogan">Çocuklar için Robotik Kursu İcat Et!</h4> 
+              <h5 class="icerik"> Yaratıcı düşünce, problem çözebilme becerisi,teknik <br/><h id="k2"  onclick="kurs_2()" >...devamı</h><br/> <h id="k2_1"></h>  </h5>
+            </div>
+        
+          </td>
+          <td  border="2">
+            <div id="egitim_3">
+              <img src="images/Boytheatrecurtain_1400-1.jpg" />
+              <h3 id="kurs3" class="kurs_adi">Çocuklar için Yaratıcı Drama</h3><br/>
+              <h4 class="slogan">Sahne Senin!</h4>
+                 
+              <h5 class="icerik"> Hayatın kendisinin de bir drama sahnesi olduğunu<br/><h id="k3"  onclick="kurs_3()" >...devamı</h><br/> <h id="k3_1"></h>  </h5>
+            </div>
+          </td>
+       </tr>
+       <tr>
+
+        <td  border="2">
+          <div id="egitim_4">
+            <img src="images/matematik.jpg" />
+            <h3 id="kurs1" class="kurs_adi">Çocuklar İçin Matematik Kursu</h3><br/>
+            <h4 class="slogan">Matematik Çok Kolay!</h4>
+            <h5 class="icerik"> Beyni güçlendirir ve hızlandırır, bilişsel yetenekleri<br/> <h id="k4"  onclick="kurs_4()" >...devamı</h><br/> <h id="k4_1"></h>  </h5> 
+          </div>
+        </td>
+        <td  border="2">
+           <div id="egitim_5">
+             <img src="images/ucdtasarim.png" />
+             <h3 id="kurs2" class="kurs_adi"> Çocuklar İçin 3D Tasarım Eğitimi</h3><br/>
+             <h4 class="slogan">Sanatsal ruh ve yeteneğini geliştir!</h4>
+             <h5 class="icerik"> Tasarım eğitimi alan çocuklar öğrenme, yaratıcılık,<br/> <h id="k5"  onclick="kurs_5()" >...devamı</h></h5>
+            
+           </div>
+         </td>
+         <td  border="2">
+           <div id="egitim_6">
+             <img src="images/resim.jpeg" />
+             <h3 id="kurs3" class="kurs_adi">Çocuklar İçin Resim Atöylesi</h3><br/>
+             <h4 >Kendini Serbest Bırak!</h4>
+            
+             <h5 class="icerik"> Çocuklarımızın nesneleri sanata dönüştürdükleri, <br/><h id="k6" onclick="kurs_6()" >...devamı</h><br/> <h id="k6_1"></h> </h5>
+           </div>
+         </td>
+      </tr>
+     </table>
+     <br><br>
+     <b id="var" onclick="egitim_detay()"><span>Tüm Eğitimleri Görmek İçin Tıklayınız.</span></b>
+     <br><br><br>
+     <div class="iletişim_formu">
+        <form id="contact" class="contact">
+            <h2>İletişim Sayfası</h2>
+            <div class="form-control">
+                <input placeholder="Adınız Soyadınız" type="text" required autofocus>
+            </div>
+            <div class="form-control">
+                <input placeholder="E-Posta Adresiniz" type="email" required>
+            </div>
+            <div class="form-control">
+                <input placeholder="Konu" type="text" required>
+            </div>
+            <div class="form-control">
+                <textarea placeholder="Lütfen Mesajınızı Buraya Yazın.." required></textarea>
+            </div>
+            <div class="form-control">
+                <button name="submit" type="submit" id="submit">GÖNDER</button>
+            </div>
+        </form>
+    
+    </div>
+    </body>
+    <footer>
+        <div id="partend">
+            <div class="partendeğitimler">
+                <ul class="partendlisteleme1"><h2>Eğitimler<a href=""></a></h2>
+                    <li>Santranç<a href=""></a></li>
+                    <li>Kil Atölyesi<a href=""></a></li>
+                    <li>Fransızca Ekler Yapım Atölyesi<a href=""></a></li>
+                    <li>Robotik Kodlama Eğitimi<a href=""></a></li>
+                    <li>İspanyolca Drama Ve Konuşma Kulübü<a href=""></a></li>
+                    <li>3D Tasarım Eğitimi<a href=""></a></li>
+                </ul>
+            </div>
+            <div class="partendpersonel">
+                <ul class="partendlisteleme1"><h2>Personel<a href=""></a></h2>
+                    <li>İdari Kadro<a href=""></a></li>
+                    <li>Öğretmen Kadro<a href=""></a></li>
+                </ul>
+            </div>
+            <div class="partendkurumsal">
+                <ul class="partendlisteleme1"><h2>Kurumsal<a href=""></a></h2>
+                    <li>Anasayfa<a href=""></a></li>
+                    <li>Hakkımızda<a href=""></a></li>
+                    <li>Eğitimler<a href=""></a></li>
+                    <li>Personel<a href=""></a></li>
+                    <li>İletişim<a href=""></a></li>
+                </ul>
+            </div>
+            <div class="partendsosyalmedya">
+                <ul class="partendlisteleme1"><h2>Sosyal Medya<a href=""></a></h2>
+                    <li>İnstagram<a href=""></a></li>
+                    <li>Twitter<a href=""></a></li>
+                    <li>Linkedin<a href=""></a></li>
+                </ul>
+            </div>
+            <div class="partenddiksosyalmedya">
+                <ul class="partendlisteleme2">
+                    <li>
+                        <h2><img src="images/Headphone.png"/>Çağrı Merkezi: 0850 320 50 50</h2>
+                    </li>
+                    <li>
+                        <h2><img src="images/whatsapp.png"/>Çağrı Merkezi: 0850 320 50 50</h2>
+                    </li>
+                    <li>
+                        <h2><img src="images/Gmail_icon.png"/>Çağrı Merkezi: 0850 320 50 50</h2>
+                    </li>
+                </ul>
+            </div>
+            <div class="partendyansosyalmedya">
+                <ul class="partendlisteleme2">
+                    <li><img src="images/linkedin.png"/><a href=""></a></li>
+                    <li><img src="images/Instagram_icon.png"/><a href=""></a></li>
+                    <li><img src="images/twitter.png"/><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="partendenalt">
+            <br/>
+            <address align="center">Tüm hakları saklıdır. ©2023<br/>www.justkids.com</address>
+        </div>           
+    </footer>
+</html>

@@ -1,0 +1,95 @@
+#partend{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    color: white;
+    background-color: black;
+    font-style: initial;
+}
+
+.partendlisteleme1{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.partendlisteleme1 li{
+    margin-top: 2%;
+}
+
+.partendlisteleme1 li:hover{
+    font-weight: bold;
+}
+
+.partendlisteleme2{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.partendeğitimler{
+    margin-left: 5%;
+    width: 30%;
+}
+
+.partendeğitimler h2{
+    font-size: x-large;
+}
+
+.partendpersonel{
+    margin-left: 4%;
+    width: 15%;
+}
+
+.partendpersonel h2{
+    font-size: x-large;
+}
+
+.partendkurumsal{
+    margin-left: 5%;
+    width: 15%;
+}
+
+.partendkurumsal h2{
+    font-size: x-large;
+}
+
+.partendsosyalmedya{
+    margin-left: 5%;
+    width: 15%;
+}
+
+.partendsosyalmedya h2{
+    font-size: x-large;
+}
+
+.partenddiksosyalmedya{
+    margin-left: 5%;
+    width: 45%;
+}
+
+.partenddiksosyalmedya h2{
+    font-size: large;
+}
+
+.partendyansosyalmedya{
+    margin-left: 5%;
+    width: 10%;
+}
+
+.partendyansosyalmedya img{
+    width: 35%;
+    height: 35%;
+    margin-top: 18%;   
+}
+
+.partendyansosyalmedya img:hover{
+    transform: scale(1.7);
+}
+
+.partenddiksosyalmedya img{
+    width: 10%;
+    height: 10%;
+    text-align: justify;
+    margin-right: 10%;
+}
+
+

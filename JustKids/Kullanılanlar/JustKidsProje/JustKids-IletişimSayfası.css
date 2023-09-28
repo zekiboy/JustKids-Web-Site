@@ -1,0 +1,701 @@
+/*Header için CSS kodları*/
+.lang
+{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    padding-top: 5px;
+    margin-right: 10px;
+    align-items: center;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.lang a 
+{
+    display: flex;
+    align-items: center;
+    color: blue;
+    text-decoration: none;
+}
+.lang a:first-child
+{
+    border-right: 1px solid blue;
+}
+.lang img
+{
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 5px;
+}
+.logo
+{
+    width: 20%;
+    vertical-align: middle;
+    text-align: left;
+    align-items: center;
+} 
+.logo img 
+{
+    width: 100%;
+    vertical-align: middle;
+}
+.menu > div 
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0px;
+    margin-right: 0px;
+}
+.menu 
+{
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin-left: 5%;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.menu a
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.menu a:hover
+{
+    transform: scale(1.1);
+}
+.m1,.m2,.m3,.m4,.m5 
+{
+    width: 10%;
+    height: 50px;
+    border-radius: 10px ;
+    background-color: #660099;
+    padding-top: 10px;
+    box-shadow: 0 0px 5px #660099;
+} 
+.ic-menu 
+{
+    background-color: #660099;
+    display: none;
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 10px;
+    position: absolute;
+    z-index: 1;
+    width: 9.9%;
+    height: 75px;
+    border-radius: 20px ;
+    font-size: 10px;
+}
+.ic-menu li:first-child
+{
+  border-bottom: 1px solid white;
+}
+#ic-menu a
+{
+    font-size: 15px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    padding-top:0px;
+}
+.m4:hover .ic-menu 
+{
+    display: block;
+    opacity: 0.8;
+    margin-top: 5px;
+    height: 75px;
+    font-size: 10px;
+    height:90px;
+
+}
+.m6
+{
+    width: 10%; 
+}
+.m6 input
+{
+    position: relative;
+    width: 120%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #660099;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 12px 20px 12px 40px;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; 
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.m6.expanded input
+{
+    width:180%;
+}
+.m1 a, .m2 a, .m3 a, .m4 a, .m5 a 
+{
+    font-size: 20px; /* veya istediğiniz büyüklükte bir değer */
+    transition: font-size 0.3s ease-in-out;
+}
+.m1:hover a, .m2:hover a, .m3:hover a, .m4:hover a, .m5:hover a 
+{
+    font-size: 25px; /* veya istediğiniz büyüklükte bir değer */
+    text-decoration: none;
+    color: white;
+}
+.search_box.expanded 
+{
+    width: 1%;
+}
+.search 
+{
+    display: flex;
+    align-items: center;
+}
+.search_box
+{
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;  
+}
+
+
+ 
+ 
+.takvim
+{
+    width: 25%;
+    background-color:#e0b0ff;
+    float: right;
+    /* margin-right: 4px; */
+    margin-top: -50px;
+    padding-bottom: 50px;
+    /* display: flex; */
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  margin-bottom: -3px;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wrapper{
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  /* rgba(0,0,0,0.12) */
+  /* position: relative; */
+  float: right;
+  /* margin-left:1100px ; */
+  position:fixed;
+  /* display:flexbox; */
+  background: #FFCBDB;
+
+}
+.wrapper header{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+header .icons{
+  display: flex;
+}
+header .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+.icons span:last-child{
+  margin-right: -10px;
+}
+header .icons span:hover{
+  background: #f2f2f2;
+}
+header .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+.calendar{
+  padding: 20px;
+}
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+position: relative;
+}
+.calendar .days
+{
+  position:relative; 
+
+}
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+.days li.inactive{
+  color: #aaa;
+}
+.days li.active{
+  color: #fff;
+}
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.days li.active::before{
+  background: #F28DB2;
+}
+.days li:not(.active):hover::before{
+  background: #f2f2f2;
+}
+
+  
+
+
+body
+{
+    background-color:#e0b0ff;
+    overflow-x: hidden;
+    padding-left: 10px;
+}
+
+.egitim_baslik
+{
+    width: 60%;
+    margin-left:10%;
+    margin-right: 5%;
+}
+
+.egitim_baslik h2
+{
+    margin-top: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size:30px;
+    text-align: center;
+    margin-bottom:30px;
+    font-family:"Comic Sans MS", "Comic Sans", cursive;
+    color: white;
+    background-color: #660099;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    /* text-shadow:  0 0 3px white; */
+}
+
+
+
+.matematik_baslik h1
+{
+    font-family:'Architects Daughter';
+    color: white;
+    background-color: #660099;
+    border-radius: 25px;
+    box-shadow: 0 0 15px black;
+    text-shadow:  0 0 3px #30D5C8;
+    display: inline-block;
+    padding: 8px;
+    margin-bottom: 50px;
+
+}
+
+
+.matematik_icerik
+{
+    width: 60%;
+    margin-left: 5%;
+}
+
+.matematik_icerik img
+{
+    border-radius: 50px;
+    width: 100%;
+}
+
+
+
+footer
+{
+    width: 100%;
+    margin-top: 80px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+footer a{
+	text-decoration: none;
+	color: white;
+  font-family:"Comic Sans MS", cursive, sans-serif;
+
+}
+
+footer a:hover{
+	text-decoration: none;
+	color: white;
+}
+ 
+#partend
+{
+    width: 99%;
+    height: 30%;
+    display: flex;
+    color: white;
+    background-color: #660099;
+    font-style: initial;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px; 
+
+} 
+.partendlisteleme1
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+.partendlisteleme1 h2
+{
+  margin-bottom: 20px;
+}
+.partendlisteleme1 li
+{
+  margin-top: 2%;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+	text-align: center;
+}
+.partendlisteleme1 li:hover
+{
+  font-weight: bold;
+}
+.partendlisteleme2
+{
+  list-style-type: none;
+  padding-left: 0;
+}
+.partendeğitimler
+{
+  margin-left: 5%;
+  width: 30%;
+}
+.partendeğitimler h2
+{
+  font-size: x-large;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+	margin-left: 60px;
+}
+.partendpersonel
+{
+  margin-left: 4%;
+  width: 15%;
+}
+.partendpersonel h2
+{
+  font-size: x-large;
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+.partendkurumsal
+{
+  margin-left: 5%;
+  width: 15%;
+}
+.partendkurumsal h2
+{
+    font-size: x-large;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
+  .partendsosyalmedya{
+    margin-left: 5%;
+    width: 25%;
+  }
+  
+  .partendsosyalmedya h2{
+    font-size: x-large;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+  
+  .partenddiksosyalmedya{
+    margin-left: 5%;
+    width: 45%;
+  }
+  
+  .partenddiksosyalmedya h2{
+    font-size: 16px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    padding-bottom: 30px;
+  }
+  
+  .partendyansosyalmedya{
+    margin-left: 5%;
+    width: 10%;
+  }
+  
+  .partendyansosyalmedya img{
+    width: 35%;
+    height: 35%;
+    margin-top: 18%;  
+  }
+  
+  .partendyansosyalmedya img:hover{
+    transform: scale(1.7);
+  }
+  
+  .partenddiksosyalmedya img{
+    width: 10%;
+    height: 10%;
+    text-align: justify;
+    margin-right: 10%;
+  }
+  
+  .partendenalt 
+  {
+      color: #4703A6;
+  }
+
+  .harita{
+    margin-left: 80px;
+	display: flex;
+	margin-bottom: 30px;
+  }
+
+  .adres{
+    position: relative;
+    float: right;
+	margin-left: 80px;
+  }
+.adres img
+{
+  margin-right: 400px;
+}
+
+  .mailayar{
+    z-index: 1;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    font-family: 'Ubuntu';
+    margin-bottom: 50px;
+	  margin-top: -150px;
+    margin-right: 350px;
+  }
+
+  .frame{
+    width: 600px;
+    height: 350px;
+    margin: 250px auto 0;
+    position: relative;
+    background: #435d77;
+    border-radius:0 0 40px 40px; 
+  }
+  #button_open_envelope{
+    width: 180px;
+    height: 50px;
+    position: absolute;
+    z-index: 311;
+    top: 250px;
+    left: 208px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 26px;
+    padding:15px 0; 
+    border: 2px solid #fff;
+    transition:.3s;
+  }
+  #button_open_envelope:hover{
+    background: #FFf;
+    color: #2b67cb;
+    transform:scale(1.1);
+    transition:background .25s, transform .5s,ease-in;
+    cursor: pointer;
+  }
+  .message{
+    position: relative;
+    width: 580px;
+    min-height:300px;
+    height: auto;
+    background: #fff;
+    margin: 0 auto;
+    top: 30px;
+    box-shadow: 0 0 5px 2px #333;
+    transition:2s ease-in-out;
+    transition-delay:1.5s;
+    z-index: 300;
+  }
+  .left,.right,.top{width: 0;	height: 0;position:absolute;top:0;z-index: 310;}
+  .left{	
+    border-left: 300px solid #337efc;
+    border-top: 160px solid transparent;
+    border-bottom: 160px solid transparent;
+  }
+  .right{	
+    border-right: 300px solid #337efc;
+    border-top: 160px solid transparent;
+    border-bottom: 160px solid transparent;;
+    left:300px;
+  }
+  .top{	
+    border-right: 300px solid transparent;
+    border-top: 200px solid #03A9F4;
+    border-left: 300px solid transparent;
+    transition:transform 1s,border 1s, ease-in-out;
+    transform-origin:top;
+    transform:rotateX(0deg);
+    z-index: 500;
+  }
+  .bottom{
+    width: 600px;
+    height: 190px;
+    position: absolute;
+    background: #2b67cb;
+    top: 160px;
+    border-radius:0 0 30px 30px;
+    z-index: 310; 
+  }
+  
+  .open{
+    transform-origin:top;
+    transform:rotateX(180deg);
+    transition:transform .7s,border .7s,z-index .7s ease-in-out;
+    border-top: 200px solid #2c3e50;
+    z-index: 200;
+  }
+  .pull{
+    -webkit-animation:message_animation 2s 1 ease-in-out;
+    animation:message_animation 2s 1 ease-in-out;
+    -webkit-animation-delay:.9s;
+    animation-delay:.45s;
+    transition:1.5s;
+    transition-delay:1s;
+    z-index: 350;
+  }
+  #name,#email,#phone,#messarea,#send{
+    margin: 0;
+    padding: 0 0 0 10px;
+    width: 570px;
+    height:40px;
+    float: left;
+    display: block;
+    font-size: 18px;
+    color: #2b67cb;
+    border:none;
+    border-bottom:1px solid #bdbdbd;
+    letter-spacing: normal;
+  }
+  #messarea{
+    height: 117px;
+    width: 560px;
+    overflow: auto;
+    border:none;
+    padding: 10px;
+  }
+  #send{ 
+    width:   580px;
+    padding: 0;	
+    border:  none;
+    cursor:  pointer;
+    background: #7CB342;
+    color: #fff;
+    transition:.35s;
+    letter-spacing: 1px;
+  }
+  #send:hover{background:tomato;transition:.35s;}
+  
+  ::-moz-placeholder{color: #7CB342;font-family: 'Ubuntu';font-size: 20px;opacity: 1;} 
+  ::-webkit-input-placeholder {color: #7CB342; font-family: 'Ubuntu';font-size: 20px;}
+  *:focus {outline: none;}
+  input:focus:invalid,textarea:focus:invalid {
+   /* when a field is considered invalid by the browser */
+      background: #fff url(images/invalid.png) no-repeat 98% center;
+      box-shadow: 0 0 5px #d45252;
+      border:1px solid #b03535;
+  }
+  input:required:valid,textarea:required:valid { 
+    /* when a field is considered valid by the browser */
+      background: #fff url(images/valid.png) no-repeat 98% center;
+      box-shadow: 0 0 5px #5cd053;
+      border-color: #28921f;
+  }
+  
+  
+  @-webkit-keyframes message_animation {
+    0%{
+      transform:translatey(0px);
+      z-index: 300;
+      transition: 1s ease-in-out;
+    }
+    50%{
+      transform:translatey(-340px);
+      z-index: 300;
+      transition: 1s ease-in-out;
+    }
+    51%{
+      transform:translatey(-340px);
+      z-index: 350;
+      transition: 1s ease-in-out;
+    }
+    100%{
+      transform:translatey(0px);
+      z-index: 350;
+      transition: 1s ease-in-out;
+    }
+  }
+  @keyframes message_animation {
+    0%{
+      transform:translatey(0px);
+      z-index: 300;
+      transition: 1s ease-in-out;
+    }
+    50%{
+      transform:translatey(-340px);
+      z-index: 300;
+      transition: 1s ease-in-out;
+    }
+    51%{
+      transform:translatey(-340px);
+      z-index: 350;
+      transition: 1s ease-in-out;
+    }
+    100%{
+      transform:translatey(0px);
+      z-index: 350;
+      transition: 1s ease-in-out;
+    }
+  }
+  
+  
+  

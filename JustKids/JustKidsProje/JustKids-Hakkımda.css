@@ -1,0 +1,345 @@
+/*Header için CSS kodları*/
+.lang
+{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    padding-top: 5px;
+    margin-right: 10px;
+    align-items: center;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.lang a 
+{
+    display: flex;
+    align-items: center;
+    color: blue;
+    text-decoration: none;
+}
+.lang a:first-child
+{
+    border-right: 1px solid blue;
+}
+.lang img
+{
+    vertical-align: middle;
+    width: 20px;
+    margin-right: 5px;
+}
+.logo
+{
+    width: 20%;
+    vertical-align: middle;
+    text-align: left;
+    align-items: center;
+} 
+.logo img 
+{
+    width: 100%;
+    vertical-align: middle;
+}
+.menu > div 
+{
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0px;
+    margin-right: 0px;
+}
+.menu 
+{
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin-left: 5%;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.menu a
+{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+.menu a:hover
+{
+    transform: scale(1.1);
+}
+.m1,.m2,.m3,.m4,.m5 
+{
+    width: 10%;
+    height: 40px;
+    border-radius: 10px ;
+    background-color: #660099;
+    padding-top: 10px;
+    box-shadow: 0 0px 5px #660099;
+} 
+.ic-menu 
+{
+    background-color: #660099;
+    display: none;
+    list-style-type: none;
+    padding-left: 0;
+    padding-top: 10px;
+    position: absolute;
+    z-index: 1;
+    width: 9.9%;
+    height: 75px;
+    border-radius: 20px ;
+    font-size: 10px;
+}
+#ic-menu a
+{
+    font-size: 18px;
+}
+.m4:hover .ic-menu 
+{
+    display: block;
+    opacity: 0.8;
+    margin-top: 6px;
+}
+.m6
+{
+    width: 10%; 
+}
+.m6 input
+{
+    position: relative;
+    width: 120%;
+    height: 50px;
+    box-sizing: border-box;
+    border: 2px solid #660099;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 12px 20px 12px 40px;
+    -moz-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out; 
+    font-family:"Comic Sans MS", cursive, sans-serif;
+}
+.m6.expanded input
+{
+    width:180%;
+}
+.m1 a, .m2 a, .m3 a, .m4 a, .m5 a 
+{
+    font-size: 20px; /* veya istediğiniz büyüklükte bir değer */
+    transition: font-size 0.3s ease-in-out;
+}
+.m1:hover a, .m2:hover a, .m3:hover a, .m4:hover a, .m5:hover a 
+{
+    font-size: 25px; /* veya istediğiniz büyüklükte bir değer */
+}
+.search_box.expanded 
+{
+    width: 1%;
+}
+.search 
+{
+    display: flex;
+    align-items: center;
+}
+.search_box
+{
+    flex-shrink: 0;
+    width: 100%;
+    position: relative;  
+}
+
+/*Body kısmı için CSS Kodları*/
+body
+{
+    background-color: #e0b0ff;
+    overflow-x: hidden ;
+}
+/*Başlık İçin CSS Kodları*/
+.baslık 
+{
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 60px;
+    width: 100%;
+    margin-left: 42%;
+    width: 10%;
+    height: 40px;
+    border-radius: 10px ;
+    background-color: #660099;
+    padding: 10px;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    box-shadow: 0 0px 5px #660099;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 20px; /* veya istediğiniz büyüklükte bir değer */
+}
+.hint p
+{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    padding-left: 24%;
+    font-size: 30px;
+    color: purple;
+    font-style: oblique;
+}
+.hint1
+{
+    text-align: center;
+}
+.hint1 img
+{
+    border-radius: 50px;
+}
+.hint2
+{
+    text-align: center;
+}
+.hint2 img
+{
+    border-radius: 50px;
+}
+
+/*Footer İçin CSS Kodları*/
+footer
+{
+    width: 100%;
+    margin-top: 80px;
+    font-family:"Comic Sans MS", cursive, sans-serif;     
+}
+
+
+footer a{
+	text-decoration: none;
+	color: white;
+}
+
+footer a:hover{
+	text-decoration: none;
+	color: white;
+}
+
+#partend
+{
+    width: 100%;
+    height: 30%;
+    position: relative;
+    float: left;
+    display: flex;
+    color: white;
+    background-color:#660099;
+    font-style: initial;
+    border-radius: 10px;    
+}
+.partendlisteleme1
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+.partendlisteleme1 li
+{
+    margin-top: 2%;
+    cursor: pointer;
+    text-align:center;
+    padding-left: 0;
+
+}
+.partendlisteleme1 li:hover
+{
+    font-weight: bold;
+}
+.partendlisteleme2
+{
+    width: 100%;
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 35px;
+    cursor: pointer;
+}
+.partendeğitimler
+{
+    margin-left: 5%;
+    width: 30%;
+}
+.partendeğitimler h2
+{
+    font-size: x-large;
+    padding-left: 70px;
+}
+.partendpersonel
+{
+    margin-left: 4%;
+    width: 15%;
+}
+.partendpersonel li
+{
+    margin-right: 10%;
+}
+.partendpersonel h2
+{
+    font-size: x-large;
+    margin-left: 5%;
+}
+.partendkurumsal
+{
+    margin-left: 5%;
+    width: 15%;
+}
+.partendkurumsal h2
+{
+    font-size: x-large;
+}
+.partendsosyalmedya
+{
+    margin-left: 5%;
+    width: 30%;
+}
+.partendsosyalmedya li
+{
+    margin-right: 40%;
+}
+.partendsosyalmedya h2
+{
+    font-size: x-large;
+}
+.partenddiksosyalmedya
+{
+    width: 48%;
+}
+.partenddiksosyalmedya h2
+{
+    font-size: large;
+    width: 100%;
+}
+.partendyansosyalmedya
+{
+    margin-left: 5%;
+    width: 10%;
+}
+.partendyansosyalmedya img
+{
+    width: 45%;
+    height: 45%;
+    margin-top: 18%;   
+}
+.partendyansosyalmedya img:hover
+{
+    transform: scale(1.7);
+}
+.partenddiksosyalmedya img
+{
+    width: 10%;
+    height: 10%;
+    text-align: justify;
+    margin-right: 10%;
+    position: relative;
+    float: left;
+}
+.partendenalt 
+{
+    color: #4703A6;
+}
